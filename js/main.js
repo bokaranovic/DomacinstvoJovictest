@@ -824,7 +824,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (url.pathname === location.pathname && url.hash) return;                      // sidro na istoj strani
     e.preventDefault();
     document.body.classList.add('page-leave');
-    setTimeout(() => { location.href = url.href; }, 70);
+    setTimeout(() => { location.href = url.href; }, 40);
   });
   /* povratak iz keša (dugme Nazad) — ukloni izlazni fade da strana ne ostane prazna */
   window.addEventListener('pageshow', () => {
