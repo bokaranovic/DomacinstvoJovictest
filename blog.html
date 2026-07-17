@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sr" data-lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.dataset.lang=localStorage.getItem("dj-lang")||(/^(sr|hr|bs|me|sl|mk)/i.test(navigator.language||"")?"sr":"en");document.documentElement.lang=document.documentElement.dataset.lang;document.documentElement.classList.add("js");var djt=localStorage.getItem("dj-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=djt;</script>
+  <title>Blog — Domaćinstvo Jović, Drvar</title>
+  <meta name="description" content="Priče iz doline drena: zdravlje iz drenjine, tradicija mućenog pekmeza i Dani drvarske drenjine — blog Domaćinstva Jović iz Drvara.">
+  <link rel="canonical" href="https://domacinstvojovic.com/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog — Domaćinstvo Jović">
+  <meta property="og:description" content="Priče iz doline drena.">
+  <meta property="og:image" content="og-image.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/WorkSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/WorkSans-normal-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/WorkSans-normal-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/WorkSans-normal-600-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-600-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="blog">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Preskoči na sadržaj</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Domaćinstvo Jović — početna">
+        <img src="img/logo.webp" alt="Logo Domaćinstva Jović" width="52" height="61">
+        <span class="brand__name">Domaćinstvo Jović
+          <small data-i18n="brand.small">Drvar · od 2010.</small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Glavna navigacija">
+        <a href="index.html" data-i18n="nav.home">Početna</a>
+        <a href="o-nama.html" data-i18n="nav.about">O nama</a>
+        <a href="narucite.html" data-i18n="nav.shop">Naruči</a>
+        <a href="galerija.html" data-i18n="nav.gallery">Galerija</a>
+        <a href="blog.html" class="is-active" data-i18n="nav.blog">Blog</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Izbor jezika">
+          <button type="button" data-lang="sr" class="is-on">SR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="theme-btn" data-theme-toggle aria-label="Tamna / svijetla tema">
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button type="button" class="cart-btn" data-open-cart aria-label="Otvori korpu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="lbl" data-i18n="nav.cart">Korpa</span>
+          <span class="cart-btn__count">0</span>
+        </button>
+        <button type="button" class="burger" aria-label="Meni" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="overflow:hidden">
+      <img class="corner-branch corner-branch--tl ill" src="img/grana-1.webp" alt="" aria-hidden="true">
+      <img class="deco" src="img/deco-kasika.webp" alt="" aria-hidden="true" style="top:20%; right:7%; --w:145px; --rot:8deg; --del:3s">
+      <div class="container" style="position:relative; z-index:1">
+        <span class="kicker" data-i18n="blogp.kicker">Blog</span>
+        <h1 data-i18n="blogp.title">Priče iz doline drena</h1>
+        <p class="lead" data-i18n="blogp.lead">O zdravlju, tradiciji i ljudima — sve što dren nosi sa sobom, zapisano našim riječima.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <img class="deco" src="img/extra/rustika.webp" alt="" aria-hidden="true" style="bottom:10%; left:2%; --w:160px; --rot:-5deg; --del:3s">
+      <img class="deco" src="img/extra/hljeb-sa-dzemom.webp" alt="" aria-hidden="true" style="top:8%; right:2%; --w:140px; --rot:7deg; --del:9s">
+      <div class="container">
+        <div class="blog-grid">
+          <article class="b-card reveal" style="--d:.05s">
+            <a href="blog/zdrav-kao-dren.html" class="b-card__img"><img class="ill" src="img/blog-dren.webp" alt="Botanička studija drenjine" loading="lazy"></a>
+            <div class="b-card__body">
+              <span class="b-card__tag" data-i18n="b1.tag">Zdravlje</span>
+              <h3><a href="blog/zdrav-kao-dren.html" data-i18n="b1.title">Zašto se kaže „zdrav ko dren"?</a></h3>
+              <p data-i18n="b1.ex">Vitamin C, željezo, antioksidansi — otkrijte zašto je ova mala crvena bobica veliki saveznik imuniteta.</p>
+              <a href="blog/zdrav-kao-dren.html" class="more"><span data-i18n="blog.readMore">Pročitaj više</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </article>
+          <article class="b-card reveal" style="--d:.15s">
+            <a href="blog/muceni-pekmez.html" class="b-card__img"><img class="ill" src="img/blog-pekmez.webp" alt="Hljeb namazan pekmezom od drenjine" loading="lazy"></a>
+            <div class="b-card__body">
+              <span class="b-card__tag" data-i18n="b2.tag">Tradicija</span>
+              <h3><a href="blog/muceni-pekmez.html" data-i18n="b2.title">Mućeni pekmez — tradicija koja se ne kuva</a></h3>
+              <p data-i18n="b2.ex">Tri sata mućenja, nula kuvanja. Priča o čuvenom drvarskom specijalitetu koji je postao brend.</p>
+              <a href="blog/muceni-pekmez.html" class="more"><span data-i18n="blog.readMore">Pročitaj više</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </article>
+          <article class="b-card reveal" style="--d:.25s">
+            <a href="blog/dani-drenjine.html" class="b-card__img"><img class="ill" src="img/blog-drenjine.webp" alt="Drvena gajba puna drenjina" loading="lazy"></a>
+            <div class="b-card__body">
+              <span class="b-card__tag" data-i18n="b3.tag">Drvar</span>
+              <h3><a href="blog/dani-drenjine.html" data-i18n="b3.title">Dani drvarske drenjine</a></h3>
+              <p data-i18n="b3.ex">Manifestacija koja svake jeseni okupi cijeli kraj — i na kojoj naša tezga uvijek prva opusti.</p>
+              <a href="blog/dani-drenjine.html" class="more"><span data-i18n="blog.readMore">Pročitaj više</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="img/logo.webp" alt="Logo Domaćinstva Jović" loading="lazy" width="74" height="87">
+          <div class="name">Domaćinstvo Jović</div>
+          <p data-i18n="footer.tag">Originalna kvaliteta iz Drvara — od 2010. godine.</p>
+          <div class="social">
+            <a href="https://www.facebook.com/p/Doma%C4%87instvo-Jovi%C4%87-61557918760663/" target="_blank" rel="noopener" aria-label="Facebook — Domaćinstvo Jović">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21.9v-6.96h2.33l.44-2.9H13.5v-1.88c0-.79.39-1.57 1.64-1.57h1.27V6.12s-1.15-.2-2.25-.2c-2.3 0-3.8 1.39-3.8 3.91v2.21H7.82v2.9h2.54v6.96a10.1 10.1 0 0 0 3.14 0Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer.nav">Navigacija</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Početna</a></li>
+            <li><a href="o-nama.html" data-i18n="nav.about">O nama</a></li>
+            <li><a href="galerija.html" data-i18n="nav.gallery">Galerija</a></li>
+            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+            <li><a href="uslovi.html" data-i18n="nav.terms">Uslovi naručivanja</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.shop">Proizvodi</h4>
+          <ul>
+            <li><a href="proizvod-rakija.html" data-i18n="p.rakija.name">Drenovača</a></li>
+            <li><a href="proizvod-liker.html" data-i18n="p.liker.name">Liker od drenjine</a></li>
+            <li><a href="proizvod-pekmez.html" data-i18n="p.pekmez.name">Mućeni pekmez</a></li>
+            <li><a href="proizvod-tursija.html" data-i18n="p.tursija.name">Turšija od drenjine</a></li>
+            <li><a href="narucite.html#paket" data-i18n="paket.title">Poklon paket od drena</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Kontakt</h4>
+          <address>
+            Mlinski put 185, Drvar selo<br>
+            Bosna i Hercegovina<br>
+            <a href="tel:+38763133086">+387 63 133 086</a> (Suzana)<br>
+            <a href="https://wa.me/38763133086" target="_blank" rel="noopener">WhatsApp</a> &middot; <a href="viber://chat?number=%2B38763133086">Viber</a><br>
+            <a href="mailto:sue.jovic@gmail.com">sue.jovic@gmail.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span data-year>2026</span> Domaćinstvo Jović. <span data-i18n="footer.rights">Sva prava zadržana.</span></span>
+        <span class="hand" data-i18n="footer.made">Napravljeno sa ❤ u Drvaru</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= KORPA (drawer) ================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Korpa">
+    <div class="drawer__head">
+      <h3 data-i18n="cart.title">Vaša korpa</h3>
+      <button type="button" class="drawer__close" aria-label="Zatvori korpu">✕</button>
+    </div>
+    <div class="drawer__items" id="cartItems"></div>
+    <div class="drawer__foot" id="cartFoot">
+      <div class="drawer__total">
+        <span data-i18n="cart.total">Ukupno:</span>
+        <b id="cartTotal">0 KM</b>
+      </div>
+      <p class="drawer__note" data-i18n="cart.note">Plaćanje pouzećem ili po dogovoru. Poštarina se obračunava pri potvrdi.</p>
+      <a href="narucite.html#zavrsi" class="btn btn--primary" data-i18n="cart.checkout">Završi narudžbu</a>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

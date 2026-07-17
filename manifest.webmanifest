@@ -1,0 +1,13 @@
+{
+  "name": "Domaćinstvo Jović",
+  "short_name": "Dom. Jović",
+  "description": "Originalna kvaliteta iz Drvara — proizvodi od drenjine.",
+  "start_url": "index.html",
+  "display": "browser",
+  "background_color": "#FAF6ED",
+  "theme_color": "#A6262B",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

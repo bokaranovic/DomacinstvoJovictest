@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sr" data-lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.dataset.lang=localStorage.getItem("dj-lang")||(/^(sr|hr|bs|me|sl|mk)/i.test(navigator.language||"")?"sr":"en");document.documentElement.lang=document.documentElement.dataset.lang;document.documentElement.classList.add("js");var djt=localStorage.getItem("dj-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=djt;</script>
+  <title>Galerija — Domaćinstvo Jović, Drvar</title>
+  <meta name="description" content="Galerija Domaćinstva Jović — botaničke ilustracije drenjine i naših proizvoda: pekmez, rakija, liker, turšija, slatko i med iz Drvara.">
+  <link rel="canonical" href="https://domacinstvojovic.com/galerija.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galerija — Domaćinstvo Jović">
+  <meta property="og:description" content="Zavirite u naš svijet drena.">
+  <meta property="og:image" content="og-image.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/WorkSans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/WorkSans-normal-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/WorkSans-normal-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/WorkSans-normal-600-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-600-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-normal-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Preskoči na sadržaj</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Domaćinstvo Jović — početna">
+        <img src="img/logo.webp" alt="Logo Domaćinstva Jović" width="52" height="61">
+        <span class="brand__name">Domaćinstvo Jović
+          <small data-i18n="brand.small">Drvar · od 2010.</small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Glavna navigacija">
+        <a href="index.html" data-i18n="nav.home">Početna</a>
+        <a href="o-nama.html" data-i18n="nav.about">O nama</a>
+        <a href="narucite.html" data-i18n="nav.shop">Naruči</a>
+        <a href="galerija.html" class="is-active" data-i18n="nav.gallery">Galerija</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Izbor jezika">
+          <button type="button" data-lang="sr" class="is-on">SR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="theme-btn" data-theme-toggle aria-label="Tamna / svijetla tema">
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button type="button" class="cart-btn" data-open-cart aria-label="Otvori korpu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="lbl" data-i18n="nav.cart">Korpa</span>
+          <span class="cart-btn__count">0</span>
+        </button>
+        <button type="button" class="burger" aria-label="Meni" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="overflow:hidden">
+      <img class="corner-branch corner-branch--tl ill" src="img/grana-1.webp" alt="" aria-hidden="true">
+      <img class="deco" src="img/deco-grana-bobice.webp" alt="" aria-hidden="true" style="top:26%; right:6%; --w:200px; --rot:5deg; --del:1s">
+      <img class="deco" src="img/deco-seme.webp" alt="" aria-hidden="true" style="top:74%; left:3%; --w:115px; --rot:-8deg; --del:6s">
+      <div class="container" style="position:relative; z-index:1">
+        <span class="kicker" data-i18n="gal.kicker">Galerija</span>
+        <h1 data-i18n="gal.title">Naš svijet drena</h1>
+        <p class="lead" data-i18n="gal.lead">Od cvijeta do tegle — botanička kolekcija Domaćinstva Jović. Kliknite na sliku za uvećanje.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="masonry">
+          <a href="img/galerija/g-korpa-drenjina.webp" class="reveal"><img class="ill" src="img/galerija/g-korpa-drenjina-thumb.webp" alt="Pletena korpa puna svježih drenjina" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-cvijet-drena.webp" class="reveal"><img class="ill" src="img/galerija/g-cvijet-drena-thumb.webp" alt="Žuti cvjetovi drena na grani" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-casa-rakije.webp" class="reveal"><img class="ill" src="img/galerija/g-casa-rakije-thumb.webp" alt="Čaša drenovače sa svježim drenjinama" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-hljeb-pekmez.webp" class="reveal"><img class="ill" src="img/galerija/g-hljeb-pekmez-thumb.webp" alt="Domaći hljeb namazan mućenim pekmezom" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-tegle.webp" class="reveal"><img class="ill" src="img/galerija/g-tegle-thumb.webp" alt="Tegle proizvoda od drenjine" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-grana-ploda.webp" class="reveal"><img class="ill" src="img/galerija/g-grana-ploda-thumb.webp" alt="Grana drena puna zrelih plodova" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-slatko.webp" class="reveal"><img class="ill" src="img/galerija/g-slatko-thumb.webp" alt="Slatko od drenjina u staklenoj tegli" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-cokanj.webp" class="reveal"><img class="ill" src="img/galerija/g-cokanj-thumb.webp" alt="Čokanj sa drenovačom" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-suve-drenjine.webp" class="reveal"><img class="ill" src="img/galerija/g-suve-drenjine-thumb.webp" alt="Keramička zdjela sa suvim drenjinama" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-posluzenje.webp" class="reveal"><img class="ill" src="img/galerija/g-posluzenje-thumb.webp" alt="Poslužavnik sa rakijom i slatkim — tradicionalno posluženje" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-fisek.webp" class="reveal"><img class="ill" src="img/galerija/g-fisek-thumb.webp" alt="Fišek od papira pun drenjina" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-med.webp" class="reveal"><img class="ill" src="img/galerija/g-med-thumb.webp" alt="Tegla meda sa drenjinama" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-korpa-puna.webp" class="reveal"><img class="ill" src="img/galerija/g-korpa-puna-thumb.webp" alt="Korpa koja se prelijeva od drenjina" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-sok.webp" class="reveal"><img class="ill" src="img/galerija/g-sok-thumb.webp" alt="Sok od drenjine se sipa u čašu" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-kasika-slatko.webp" class="reveal"><img class="ill" src="img/galerija/g-kasika-slatko-thumb.webp" alt="Kašika puna slatka od drenjina" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-platnena-vreca.webp" class="reveal"><img class="ill" src="img/galerija/g-platnena-vreca-thumb.webp" alt="Platnena vreća sa drenjinama" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-kristalna-cinija.webp" class="reveal"><img class="ill" src="img/galerija/g-kristalna-cinija-thumb.webp" alt="Kristalna činija sa drenjinama" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-flasa-rakije.webp" class="reveal"><img class="ill" src="img/galerija/g-flasa-rakije-thumb.webp" alt="Staklena boca drenovače" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-korpa-rakija.webp" class="reveal"><img class="ill" src="img/galerija/g-korpa-rakija-thumb.webp" alt="Pletena korpa sa rakijom i voćem" loading="lazy" width="640" height="857"></a>
+          <a href="img/galerija/g-cinija.webp" class="reveal"><img class="ill" src="img/galerija/g-cinija-thumb.webp" alt="Činija koja se prelijeva od drenjina" loading="lazy" width="640" height="857"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="img/logo.webp" alt="Logo Domaćinstva Jović" loading="lazy" width="74" height="87">
+          <div class="name">Domaćinstvo Jović</div>
+          <p data-i18n="footer.tag">Originalna kvaliteta iz Drvara — od 2010. godine.</p>
+          <div class="social">
+            <a href="https://www.facebook.com/p/Doma%C4%87instvo-Jovi%C4%87-61557918760663/" target="_blank" rel="noopener" aria-label="Facebook — Domaćinstvo Jović">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21.9v-6.96h2.33l.44-2.9H13.5v-1.88c0-.79.39-1.57 1.64-1.57h1.27V6.12s-1.15-.2-2.25-.2c-2.3 0-3.8 1.39-3.8 3.91v2.21H7.82v2.9h2.54v6.96a10.1 10.1 0 0 0 3.14 0Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer.nav">Navigacija</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Početna</a></li>
+            <li><a href="o-nama.html" data-i18n="nav.about">O nama</a></li>
+            <li><a href="galerija.html" data-i18n="nav.gallery">Galerija</a></li>
+            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+            <li><a href="uslovi.html" data-i18n="nav.terms">Uslovi naručivanja</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.shop">Proizvodi</h4>
+          <ul>
+            <li><a href="proizvod-rakija.html" data-i18n="p.rakija.name">Drenovača</a></li>
+            <li><a href="proizvod-liker.html" data-i18n="p.liker.name">Liker od drenjine</a></li>
+            <li><a href="proizvod-pekmez.html" data-i18n="p.pekmez.name">Mućeni pekmez</a></li>
+            <li><a href="proizvod-tursija.html" data-i18n="p.tursija.name">Turšija od drenjine</a></li>
+            <li><a href="narucite.html#paket" data-i18n="paket.title">Poklon paket od drena</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Kontakt</h4>
+          <address>
+            Mlinski put 185, Drvar selo<br>
+            Bosna i Hercegovina<br>
+            <a href="tel:+38763133086">+387 63 133 086</a> (Suzana)<br>
+            <a href="https://wa.me/38763133086" target="_blank" rel="noopener">WhatsApp</a> &middot; <a href="viber://chat?number=%2B38763133086">Viber</a><br>
+            <a href="mailto:sue.jovic@gmail.com">sue.jovic@gmail.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span data-year>2026</span> Domaćinstvo Jović. <span data-i18n="footer.rights">Sva prava zadržana.</span></span>
+        <span class="hand" data-i18n="footer.made">Napravljeno sa ❤ u Drvaru</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= KORPA (drawer) ================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Korpa">
+    <div class="drawer__head">
+      <h3 data-i18n="cart.title">Vaša korpa</h3>
+      <button type="button" class="drawer__close" aria-label="Zatvori korpu">✕</button>
+    </div>
+    <div class="drawer__items" id="cartItems"></div>
+    <div class="drawer__foot" id="cartFoot">
+      <div class="drawer__total">
+        <span data-i18n="cart.total">Ukupno:</span>
+        <b id="cartTotal">0 KM</b>
+      </div>
+      <p class="drawer__note" data-i18n="cart.note">Plaćanje pouzećem ili po dogovoru. Poštarina se obračunava pri potvrdi.</p>
+      <a href="narucite.html#zavrsi" class="btn btn--primary" data-i18n="cart.checkout">Završi narudžbu</a>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Master PNG-ovi (izvorni, veliki) — live sajt koristi samo webp iz img/.
+# Ostaju lokalno kao rezerva; ne treba ih na GitHub Pages.
+new_img/
+
+# Lokalna/alatna konfiguracija
+.claude/
+
+# Zavisnosti (za svaki slučaj)
+node_modules/
+
+# Smeće operativnog sistema
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
