@@ -12,6 +12,20 @@ Korisnik (vlasnikov saradnik) piše na srpskom — odgovaraj na srpskom.
   Windows je port 8737 ubacio u rezervisani opseg, pa se port dodeljuje automatski).
 - Nema build koraka — čist HTML/CSS/JS, otvara se i direktno iz fajla.
 
+## Deploy (UŽIVO)
+- **GitHub Pages**, repo: https://github.com/bokaranovic/DomacinstvoJovictest (public, grana `main`).
+  Live: https://bokaranovic.github.io/DomacinstvoJovictest/ (Deploy from branch, root, `.nojekyll`).
+- Guranje na `main` = auto-redeploy (~1 min). UVEK `git pull --rebase origin main` PRE `git push`
+  (korisnik povremeno commituje sam). `.gitignore`: `new_img/`, `.claude/`, node_modules, OS smeće.
+- Slike: korisnik ubacuje PNG → konvertuj u WebP (sharp, ad-hoc u scratchpad-u), obriši PNG, pa guraj.
+- ⚠️ Kanonski URL/sitemap/og su još placeholder `domacinstvojovic.com` — zameniti kad korisnik
+  odluči (github.io ili pravi domen) radi indeksacije.
+
+## Header (staklasti) — VAŽNO za mobilni meni
+- Blur je na `.header::before` (NE na `.header`) — backdrop-filter na headeru bi napravio
+  containing block i zarobio fiksirani mobilni meni (.nav) u visinu headera. NE vraćati blur
+  na sam `.header`. Tamna tema: `html[data-theme="dark"] .header::before`.
+
 ## Struktura
 - `index.html`, `o-nama.html`, `narucite.html` (shop), `galerija.html`, `blog.html`, `kontakt.html`
 - `proizvod-rakija.html`, `proizvod-liker.html`, `proizvod-pekmez.html`, `proizvod-tursija.html` —
