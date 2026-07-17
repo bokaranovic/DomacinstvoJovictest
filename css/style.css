@@ -570,8 +570,8 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 1.7rem); }
   transition: transform .45s var(--ease), box-shadow .45s var(--ease);
 }
 .benefit:hover { transform: translateY(-6px); box-shadow: var(--shadow-sm); }
-.benefit__icon { width: 92px; height: 92px; margin: 0 auto 16px; display: grid; place-items: center; }
-.benefit__icon img { max-height: 92px; width: auto; }
+.benefit__icon { width: 104px; height: 104px; margin: 0 auto 16px; display: grid; place-items: center; }
+.benefit__icon img { max-height: 104px; max-width: 100%; width: auto; }
 .benefit h3 { margin-bottom: 8px; }
 .benefit p { font-size: .92rem; color: var(--ink-soft); }
 
